@@ -73,19 +73,7 @@ export default function Hero() {
           </div>
         </nav>
 
-        <section className="hero h-[75vh] flex flex-col justify-center">
-          <p className="text-[18px] font-bold">I am Noor</p>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] bg-clip-text text-transparent">Front-End Developer & SEO specialist</h1>
-          <p className="pt-3 flex-wrap sm:flex-nowrap">Frontend Developer & SEO Specialist skilled in creating responsive, user-friendly websites and optimizing them for better performance and search engine visibility.</p>
-
-          <div className="mt-10 w-full lg:w-[800px] h-[4px] rounded-full bg-gradient-to-r from-[#4fd6c6]
-           to-[#4e379e] "/>
-
-          <div className="sm-icons flex gap-1.5 text-[18px] mt-8">
-                  <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin cursor-pointer text-[25px] "></i></a>
-                  <a href="https://github.com/noorf-02" target="_blank"><i class="fa-brands fa-github cursor-pointer text-[25px] "></i></a>
-                </div>
-        </section>
+        
 
 
 
