@@ -33,14 +33,14 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <button className="talk border-[#222222] border-[2px] p-3 rounded-2xl bg-[#1A1A1A]/70 font-bold text-white cursor-pointer hover:bg-[#2a2a2a]/70">
+            <a href="https://www.linkedin.com/" target="_blank" className="talk border-[#222222] border-[2px] p-3 rounded-2xl bg-[#1A1A1A]/70 font-bold text-white cursor-pointer hover:bg-[#2a2a2a]/70">
               Let's Talk!
-            </button>
+            </a>
 
             <span className=" block sm:hidden">
               <i
-                className="fa-solid fa-bars text-white "
-                onClick={() => setOpen(!isOpen)}
+                className="fa-solid fa-bars text-white cursor-pointer"
+                onClick={() => setOpen(true)}
               ></i>
             </span>
             <div className={`side-bar h-screen fixed right-0 top-0 bg-[#1A1A1A] w-60 p-6 block sm:hidden ${isOpen ? 'block' : 'hidden '}`}>
@@ -64,14 +64,31 @@ export default function Hero() {
                 <hr />
                 <div className="cursor-pointer">Contact</div>
                 <hr />
-                <div className="sm-icons">
-                  <i class="fa-brands fa-linkedin cursor-pointer"></i>
-                  <i class="fa-brands fa-github cursor-pointer"></i>
+                <div className="sm-icons flex gap-1.5 text-[18px]">
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin cursor-pointer"></i></a>
+                  <a href="https://github.com/noorf-02" target="_blank"><i class="fa-brands fa-github cursor-pointer"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </nav>
+
+        <section className="hero h-[75vh] flex flex-col justify-center">
+          <p className="text-[18px] font-bold">I am Noor</p>
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] bg-clip-text text-transparent">Front-End Developer & SEO specialist</h1>
+          <p className="pt-3 flex-wrap sm:flex-nowrap">Frontend Developer & SEO Specialist skilled in creating responsive, user-friendly websites and optimizing them for better performance and search engine visibility.</p>
+
+          <div className="mt-10 w-full lg:w-[800px] h-[4px] rounded-full bg-gradient-to-r from-[#4fd6c6]
+           to-[#4e379e] "/>
+
+          <div className="sm-icons flex gap-1.5 text-[18px] mt-8">
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin cursor-pointer text-[25px] "></i></a>
+                  <a href="https://github.com/noorf-02" target="_blank"><i class="fa-brands fa-github cursor-pointer text-[25px] "></i></a>
+                </div>
+        </section>
+
+
+
       </div>
 
       {/* counter  */}
