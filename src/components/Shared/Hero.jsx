@@ -10,6 +10,9 @@ export default function Hero() {
         }
     }
 
+    const { isOpen , setOpen } = useState(false)
+
+
   return (
     <>
     <div className='w-[90%] mx-auto text-white py-3.5'>
@@ -23,12 +26,59 @@ export default function Hero() {
         </div>
         <div className='flex gap-5 items-center'><button className="talk border-[#222222] border-[2px] p-3 rounded-2xl bg-[#1A1A1A]/70 font-bold text-white cursor-pointer hover:bg-[#2a2a2a]/70">Let's Talk!</button>
 
-        <span className=' block sm:hidden'><i className="fa-solid fa-bars text-white text-2xl"></i></span>
+        
+        
+        
+        <span className=' block sm:hidden' ><i className="fa-solid fa-bars text-white">
+          
+          <div className="side-bar h-screen fixed right-0 top-0 bg-[#1A1A1A] w-60 p-6">
+            <i class="fa-solid fa-xmark cursor-pointer fixed right-7"></i>
+            
+             <div className="flex
+             flex-col
+             text-left
+             h-50
+             justify-between 
+             mt-10
+             font-medium">
+            <div className="cursor-pointer">Home</div>
+            <hr />
+            <div className="cursor-pointer ">Projects</div>
+            <hr />
+            <div className="cursor-pointer">Services</div>
+            <hr />
+            <div className="cursor-pointer">Contact</div>
+            <hr />
+            <div className="sm-icons">
+              <i class="fa-brands fa-linkedin cursor-pointer"></i>
+              <i class="fa-brands fa-github cursor-pointer"></i>
+            </div>
+        </div>
+
+            
+            </div>
+          
+          
+          
+          
+          </i></span>
         </div>
       </nav>
     </div>
 
-<div className='counter text-white w-[90%] mx-auto flex flex-col items-center py-3.5 gap-5'>
+
+
+
+
+
+
+
+
+
+
+    {/* counter  */}
+
+{/* <div className='counter text-white w-[90%] mx-auto flex flex-col items-center py-9.5 gap-5'>
     <h1 className='counter-heading text-2xl font-bold'> Counter - UseState Example </h1>
     <span className='bg-gray-500 p-1 px-2 rounded-[5px] w-[100px] text-center cursor-pointer'>{value}</span>
     <div className='counter-buttons flex gap-3'>
@@ -36,7 +86,7 @@ export default function Hero() {
     <button className='bg-yellow-500 p-1 px-2 rounded-[5px] w-[100px] cursor-pointer hover:bg-yellow-600' onClick={()=> setValue(value + 1)}>Increment</button>
     <button className='bg-red-500 p-1 px-2 rounded-[5px] w-[100px] cursor-pointer hover:bg-red-600' onClick={()=> setValue(0)}>Reset</button>
     </div>
-</div>
+</div> */}
 
 
 
