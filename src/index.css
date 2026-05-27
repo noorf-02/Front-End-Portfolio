@@ -5,3 +5,9 @@
         @apply bg-black;
     }
 }
+
+@layer components {
+    .wrapper{
+        @apply w-[90%] mx-auto py-3.5;
+    }
+}

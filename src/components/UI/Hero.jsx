@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className="w-[90%] mx-auto text-white py-3.5">
+    <div className="wrapper text-white">
       <section className="hero h-[70vh] flex flex-col justify-center">
           <p className="sm:text-[18px] text-15px font-bold">I am Noor</p>
           <h1 className="sm:text-4xl text-2xl font-bold bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] bg-clip-text text-transparent">Front-End Developer & SEO specialist</h1>

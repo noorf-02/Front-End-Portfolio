@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="w-[90%] mx-auto text-white py-3.5">
+      <div className="wrapper text-white">
         <nav className="flex justify-between items-center">
           <span className="border-[#222222] border-[2px] text-[15px] p-3 rounded-[50%] bg-[#1A1A1A]/70 font-bold text-white cursor-pointer hover:bg-[#2A2A2A]/70">
             nf
