@@ -44,7 +44,7 @@ export default function Hero() {
               ></i>
             </span>
             <div className={`side-bar h-screen fixed right-0 top-0 bg-[#1A1A1A] w-60 p-6 block sm:hidden ${isOpen ? 'block' : 'hidden '}`}>
-              <i class="fa-solid fa-xmark cursor-pointer fixed right-7" 
+              <i className="fa-solid fa-xmark cursor-pointer fixed right-7" 
               onClick={()=>setOpen(false)}></i>
 
               <div
