@@ -3,12 +3,12 @@ import {useState} from 'react'
 
 export default function Projects() {
 
-     const [ value, setValue ] = useState(0)
-  const handleDec = () => {
-      if(value>0){
-          setValue(value -1)
-      }
-  }
+    const [ value , setValue ] = useState(0);
+    const handleDec = () => {
+        if (value > 0){
+            setValue(value - 1);
+        }
+    }
 
 
   return (
