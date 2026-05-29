@@ -40,16 +40,16 @@ export default function Projects() {
         <section className="wrapper mt-8">
             <h1 className='counter-heading text-2xl font-bold text-white text-center'> Theme Change - UseState Example </h1>
 
-            <div className="mini-nav bg-[#4fd6c6] w-full h-[10vh] mt-3 flex justify-between p-2.5">
-                <div className="nav-list flex gap-4 font-bold">
-                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">Home</p>
-                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">About</p>
-                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">Contact</p>
+            <div className={`mini-nav  w-full h-fit mt-5 flex justify-between p-2.5 transition-all duration-300 ${btn? 'bg-[#4e379e]' : 'bg-[#4fd6c6]'} `}>
+                <div className={`nav-list transition-all duration-300 ${btn? 'text-white' : 'text-black'} flex flex-col sm:flex-row gap-4 font-bold `}>
+                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Home</p>
+                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>About</p>
+                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Contact</p>
                  </div>    
 
                     <div className="toggle-btn">
-                        <button className='w-12 bg-black rounded-4xl h-7'>
-                            <div className= {`bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] w-5 h-5 rounded-full mx-1 transition-all duration-300 cursor-pointer
+                        <button className={`w-12 bg-black rounded-4xl h-7 transition-all duration-300 ${btn ? 'bg-white' : 'bg-black'  }`}>
+                            <div className= {`  bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] w-5 h-5 rounded-full mx-1 transition-all duration-300 cursor-pointer
                              ${btn ? 'translate-x-5' : 'translate-x-0'} `} 
                             onClick={() => btnToggled(!btn)}></div>
                         </button>
