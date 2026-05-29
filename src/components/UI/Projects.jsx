@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import { motion } from "framer-motion"
 
 export default function Projects() {
 
@@ -9,6 +10,8 @@ export default function Projects() {
             setValue(value - 1);
         }
     }
+
+    const [ btn , btnToggled ] = useState(false)
 
 
   return (
@@ -33,6 +36,32 @@ export default function Projects() {
     <button className='bg-red-500 p-1 px-2 rounded-[5px] w-[100px] cursor-pointer hover:bg-red-600' onClick={()=> setValue(0)}>Reset</button>
     </div>
 </div>
+
+
+        <section className="wrapper">
+            <h1 className='counter-heading text-2xl font-bold text-white text-center'> Theme Change - UseState Example </h1>
+
+            <div className="mini-nav bg-[#4fd6c6] w-full h-[10vh] mt-5 flex justify-between p-2.5">
+                <div className="nav-list flex gap-4 font-medium">
+                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">Home</p>
+                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">About</p>
+                    <p className="nav-item relative after:absolute after:w-0 after:bg-black after:h-0.5 after:bottom-6 after:left-0 hover:after:w-full after:transition-all after:duration-200">Contact</p>
+                 </div>    
+
+                    <div className="toggle-btn">
+                        <button className='w-13 bg-black rounded-4xl h-7'>
+                            <div className='bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] w-5 h-5 rounded-full mx-1'></div>
+                        </button>
+                    </div>
+
+                </div>
+            
+
+        </section>
+
+
+
+
 </>
 
   )
