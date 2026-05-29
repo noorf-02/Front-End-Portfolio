@@ -42,9 +42,9 @@ export default function Projects() {
 
             <div className={`mini-nav  w-full h-fit mt-5 flex justify-between p-2.5 transition-all duration-300 ${btn? 'bg-[#4e379e]' : 'bg-[#4fd6c6]'} `}>
                 <div className={`nav-list transition-all duration-300 ${btn? 'text-white' : 'text-black'} flex flex-col sm:flex-row gap-4 font-bold `}>
-                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Home</p>
-                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>About</p>
-                    <p className={`nav-item relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 after:bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Contact</p>
+                    <p className={`nav-item w-fit relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 sm:after:bottom-1 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Home</p>
+                    <p className={`nav-item w-fit relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 sm:after:bottom-1 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>About</p>
+                    <p className={`nav-item w-fit relative after:absolute after:w-0 ${btn? 'after:bg-white' : 'after:bg-black'} cursor-pointer after:h-0.5 sm:after:bottom-1 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-200`}>Contact</p>
                  </div>    
 
                     <div className="toggle-btn">
