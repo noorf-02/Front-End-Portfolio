@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function SectionServices() {
   return (
-    <div className="services bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] h-fit rounded-t-[30px]">
+    <div className="services bg-gradient-to-r from-[#4fd6c6] to-[#4e379e] h-fit rounded-t-[30px] my-10">
       <div className="wrapper">
         <div className="wrap-line w-fit">
           <p className="text-left text-black font-bold sm:text-4xl text-2xl pt-12">

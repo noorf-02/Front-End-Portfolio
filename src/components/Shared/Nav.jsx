@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   // const [ value, setValue ] = useState(0)
@@ -19,18 +20,18 @@ export default function Hero() {
             nf
           </span>
           <div className="nav-list gap-7.5 border-[#222222] border-[2px] py-3.5 px-8.5 rounded-2xl bg-[#1A1A1A]/70 font-bold text-white cursor-pointer sm:flex hidden ">
-            <div className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
+            <Link to="/" className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
               Home
-            </div>
-            <div className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
+            </Link>
+            <Link to="projects" className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
               Projects
-            </div>
-            <div className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
+            </Link>
+            <Link to="services" className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
               Services
-            </div>
-            <div className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
+            </Link>
+            <Link to="contact" className="nav-items relative after:absolute after:-bottom-1 after:w-0 after:bg-white/70 hover:after:w-full after:left-0 after:h-0.5 after:transition-all after:duration-300 ">
               Contact
-            </div>
+            </Link>
           </div>
           <div className="flex gap-5 items-center">
             <a href="https://www.linkedin.com/" target="_blank" className="talk border-[#222222] border-[2px] p-3 rounded-2xl bg-[#1A1A1A]/70 font-bold text-white cursor-pointer hover:bg-[#2a2a2a]/70">
@@ -56,13 +57,13 @@ export default function Hero() {
              mt-10
              font-medium"
               >
-                <div className="cursor-pointer">Home</div>
+                <Link to="/" className="cursor-pointer">Home</Link>
                 <hr />
-                <div className="cursor-pointer ">Projects</div>
+                <Link to="projects" className="cursor-pointer ">Projects</Link>
                 <hr />
-                <div className="cursor-pointer">Services</div>
+                <Link to="services" className="cursor-pointer">Services</Link>
                 <hr />
-                <div className="cursor-pointer">Contact</div>
+                <Link to="contact" className="cursor-pointer">Contact</Link>
                 <hr />
                 <div className="sm-icons flex gap-1.5 text-[18px]">
                   <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin cursor-pointer"></i></a>

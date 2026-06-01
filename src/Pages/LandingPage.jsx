@@ -8,11 +8,9 @@ import Footer from '../components/Shared/Footer'
 export default function LandingPage() {
   return (
     <div>
-      <Nav />
       <Hero />
       <SectionServices/>
       <Projects/>
-      <Footer />
     </div>
   )
 }
