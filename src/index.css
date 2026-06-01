@@ -11,3 +11,10 @@
         @apply w-[90%] mx-auto py-3.5;
     }
 }
+
+@keyframes color {    
+        0% {background-color: #4fd6c6;}
+        40% {background-color: #4e379e;}
+        80% {background-color: #937ede;}
+        100% {background-color: #4fd6c6; }
+}
